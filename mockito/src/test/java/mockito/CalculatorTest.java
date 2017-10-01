@@ -10,7 +10,7 @@ int x,y;
 Calculator obj;
 	protected void setUp() throws Exception {
 		obj =new Calculator();
-		x = 4;
+		x = 2;
 		y = 10;
 		ICalculator mockObj = mock(ICalculator.class);
 		when(mockObj.addition(x, y)).thenReturn(x+y);
@@ -30,16 +30,16 @@ Calculator obj;
 	}
 	
 	public void testAddTwoNums() {
-		assertEquals(14, obj.addTwoNums(x, y));
+		assertEquals(12, obj.addTwoNums(x, y));
 	}
 	
 	public void testsubTwoNums() {
-		assertEquals(6, obj.subTwoNums(x, y));
+		assertEquals(8, obj.subTwoNums(x, y));
 	}
 	public void testdivTwoNums() {
-		assertEquals(2.5, obj.divTwoNums(x, y));
+		assertEquals(5.0, obj.divTwoNums(x, y));
 	}
 	public void testmulTwoNums() {
-		assertEquals(40, obj.mulTwoNums(x, y));
+		assertEquals(20, obj.mulTwoNums(x, y));
 	}
 }
