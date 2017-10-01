@@ -7,15 +7,15 @@ import static org.mockito.Mockito.*;
 import junit.framework.TestCase;
 
 public class AdditionTest extends TestCase {
-	Addition obj;
+	Calculator obj;
 	int x, y;
 
 	protected void setUp() throws Exception {
-		obj =new Addition();
+		obj =new Calculator();
 		x = 7;
 		y = 10;
-		CalcInterface mockObj = mock(CalcInterface.class);
-		when(mockObj.add(x, y)).thenReturn(x+y);
+		ICalculator mockObj = mock(ICalculator.class);
+		when(mockObj.addition(x, y)).thenReturn(x+y);
 	obj.setIntObj(mockObj, mockObj);	
 	}
 
