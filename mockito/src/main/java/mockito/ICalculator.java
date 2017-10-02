@@ -7,4 +7,3 @@ public interface ICalculator
 	public int multiply(int a, int b);
 	public double divide(int a, int b);
 }
-
